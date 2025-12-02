@@ -71,13 +71,6 @@ type URLResponse struct {
 }
 ```
 
-## Bonus Features
-
-- Implement concurrent execution using goroutines
-- Add timeout handling for HTTP requests
-- Implement retry logic for failed requests
-- Add proper error handling and validation
-
 ## Time Limit
 
 45 minutes
