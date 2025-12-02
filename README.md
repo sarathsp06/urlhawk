@@ -10,7 +10,6 @@ Implement a CLI application that:
 2. Fetches HTTP GET responses from those URLs concurrently
 3. Writes the results to a CSV file
 
-The core challenge is implementing the `FetchResults` function that accepts an array of URLs and returns HTTP GET request responses.
 
 ## Requirements
 
@@ -37,43 +36,6 @@ The provided test file contains intentional bugs. After implementing your functi
 2. Analyze the test code to identify logical flaws
 3. Fix the tests to properly validate your implementation
 4. Ensure all tests pass with correct implementation
-
-## Implementation Requirements
-
-You need to implement two functions:
-
-### 1. FetchResults Function
-
-- **Location**: `fetcher.go`
-- **Purpose**: Fetch HTTP GET responses from multiple URLs
-- **Requirements**: Handle errors gracefully and implement concurrent execution for performance
-
-### 2. writeResultsToFile Function  
-
-- **Location**: `main.go`
-- **Purpose**: Write individual URL results to CSV file
-- **Requirements**: Format as CSV row with headers: URL, StatusCode, BodyLength, Error
-
-## Function Signature
-
-```go
-func FetchResults(urls []string) ([]URLResponse, error)
-```
-
-## Expected Output Structure
-
-```go
-type URLResponse struct {
-    URL        string `json:"url"`
-    StatusCode int    `json:"status_code"`
-    Body       string `json:"body"`
-    Error      string `json:"error,omitempty"`
-}
-```
-
-## Time Limit
-
-45 minutes
 
 ## CLI Usage
 
