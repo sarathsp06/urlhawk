@@ -15,10 +15,5 @@ func FetchResults(urls []string) ([]URLResponse, error) {
 	//
 	// Hints for URLHawk's hunting strategy:
 	// - Use net/http package for HTTP requests
-	// - Consider using goroutines for concurrent strikes (hawk-like speed!)
-	// - Handle errors gracefully (even hawks miss sometimes)
-	// - Read response body and close it properly (clean hunting)
-	// - Set appropriate timeouts (hawks don't wait forever)
-
 	return make([]URLResponse, len(urls)), nil
 }

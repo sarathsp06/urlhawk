@@ -75,6 +75,7 @@ func readURLsFromStdin() ([]string, error) {
 	return urls, scanner.Err()
 }
 
+// writeResultsToFile - Write a single URLResponse to a CSV file
 func writeResultsToFile(result URLResponse, file *os.File) error {
 	// TODO: Implement CSV row writing functionality
 	return nil
